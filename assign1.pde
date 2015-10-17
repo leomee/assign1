@@ -29,18 +29,6 @@ void setup () {
 }
 
 void draw() {
-
-  image(treasure ,treasureX, treasureY);
-  
-  image(enemy, enemyX, enemyY);
-  enemyX += 2;
-  enemyX %= 600;
-
-  image(fighter, 580,235);
-  
-  fill(#FF0000);
-  rect(9,9, hpX, 20);
-  image(hp, 0,5);
   
   if(bgX<=641){
   
@@ -66,4 +54,16 @@ void draw() {
   println(bgX);
   println(bgX-641);
   
+  image(treasure ,treasureX, treasureY);
+  
+  image(enemy, enemyX, enemyY);
+  enemyX += 2;
+  enemyX %= 600;
+
+  image(fighter, 580,235);
+  
+  fill(#FF0000);
+  rect(9,9, hpX, 20);
+  image(hp, 0,5);
+
 }
